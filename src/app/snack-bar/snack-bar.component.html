@@ -1,0 +1,13 @@
+<div class="snack-border">
+  <div style="text-align: center;">{{data?.message}}</div>
+  <button mat-flat-button
+          color="primary"
+          (click)="onAction()"
+          style="height: 26px;">{{data.action}}</button>
+</div>
+
+<div class="progrssbar-div">
+  <mat-progress-bar mode="determinate" class="progressBar"
+                    color="primary"
+                    [value]="value"></mat-progress-bar>
+</div>
